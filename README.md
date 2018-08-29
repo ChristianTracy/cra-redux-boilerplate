@@ -1,3 +1,5 @@
+![(LITL)](cra-redux-boilerplate-logo.svg)
+
 # Project base
 The project it was created using `create-react-app` (https://github.com/facebook/create-react-app).
 
