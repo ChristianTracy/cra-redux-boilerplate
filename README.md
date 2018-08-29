@@ -1,6 +1,31 @@
-# Project folder structure
-
+# Project base
 The project it was created using `create-react-app` (https://github.com/facebook/create-react-app).
+
+# Use
+
+## Start dev server 
+
+```
+  npm run start
+```
+
+if you need change something see `create-react-app` docs.
+
+## Test
+
+Create your files to test with `[filename].test.js` inside your modules folders.
+
+The base config for test used by `create-react-app` was removed. This project use `jest` to test files. 
+
+```
+npm run test
+```
+
+This command will prompt the test results and the coverage percentage.
+
+
+
+# Project folder structure
 
 ```
 ├── README.md
@@ -135,4 +160,26 @@ export default compose(
   translate(),
   connect(...)
 )(MyComponent);
+```
+
+# Router
+
+See the full documentation of used router in [react-router](https://www.npmjs.com/package/react-router) and [connected-react-router](https://github.com/supasate/connected-react-router).
+
+You've a redirect example in `HomeActions.js` and `Home.jsx` files.
+
+```
+export const redirectExample = () => dispatch => {
+    dispatch(push('/another'))
+}
+```
+
+## All your views should be placed in commons/ViewsContainer.jsx file
+
+```
+  <Switch>
+    <Route exact path="/" component={Home} />
+    <Route path="/another" component={Another} />
+    <Route render={() => <div>DEFAULT</div>} />
+  </Switch>
 ```
