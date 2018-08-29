@@ -185,3 +185,13 @@ export const redirectExample = () => dispatch => {
     <Route render={() => <div>DEFAULT</div>} />
   </Switch>
 ```
+
+# FAQ's
+
+* Where should i put my bussines logic?
+  - The selectors are a good place to do that. 
+* Should i make test for every single reducer an action?
+  - The tests are awesome. It's a good practice to test all your reducers and actions to avoid problems :) 
+* I need to add a new view...
+  - In that case create a component inside a new module like `/modules/about/About.jsx`
+  - The next step will be add you new view in the `modules/commons/ViewsContaines.jsx`.
