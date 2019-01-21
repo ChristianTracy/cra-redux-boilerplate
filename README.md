@@ -1,11 +1,11 @@
 ![(LITL)](cra-redux-boilerplate-logo.svg)
 
 # Project base
-The project it was created using `create-react-app` (https://github.com/facebook/create-react-app).
+The project was created using `create-react-app` (https://github.com/facebook/create-react-app).
 
 # Use
 
-## Start dev server 
+## Start dev server
 
 ```
   npm run start
@@ -17,7 +17,7 @@ if you need change something see `create-react-app` docs.
 
 Create your files to test with `[filename].test.js` inside your modules folders.
 
-The base config for test used by `create-react-app` was removed. This project use `jest` to test files. 
+The base config for test used by `create-react-app` was removed. This project use `jest` to test files.
 
 ```
 npm run test
@@ -93,7 +93,7 @@ The reducers files should be located inside the `modules/[module_name]/` folders
 The file name should be created with `the name of the module (or not)` + `Reducer`.
 E.g: `HomeReducer.js` inside `modules/home/HomeReducer.js`
 
-### - Reducers tip 
+### - Reducers tip
 Always use `combineReducers` to manage little parts of the store (https://redux.js.org/api/combinereducers);
 
 ## Actions
@@ -109,7 +109,7 @@ E.g: `HomeActions.js` inside `modules/home/HomeActions.js`
 
 ### - Actions tips
 
-Create your actions usin FSA standar : https://github.com/redux-utilities/flux-standard-action
+Create your actions using FSA standard : https://github.com/redux-utilities/flux-standard-action
 Remember that you're using `redux-thunk` in this projects.
 
 ## Selectors
@@ -155,7 +155,7 @@ You can check the complete implementation in `modules/home/Home.jsx`
 
 `recompose` it's already installed in this project. This library has a lot of utils methods to use in your react components. You can see the full documentation in https://github.com/acdlite/recompose.
 
-In `modules/home/Home.jsx` you can see an example of `compose` method to combine two diffents high order components 
+In `modules/home/Home.jsx` you can see an example of `compose` method to combine two differents high order components
 
 ```
 export default compose(
@@ -188,10 +188,10 @@ export const redirectExample = () => dispatch => {
 
 # FAQ's
 
-* Where should i put my bussines logic?
-  - The selectors are a good place to do that. 
-* Should i make test for every single reducer an action?
-  - The tests are awesome. It's a good practice to test all your reducers and actions to avoid problems :) 
+* Where should I put my bussines logic?
+  - The selectors are a good place to do that.
+* Should I make test for every single reducer an action?
+  - The tests are awesome. It's a good practice to test all your reducers and actions to avoid problems :)
 * I need to add a new view...
   - In that case create a component inside a new module like `/modules/about/About.jsx`
-  - The next step will be add you new view in the `modules/commons/ViewsContaines.jsx`.
+  - The next step will be add your new view in the `modules/commons/ViewsContaines.jsx`.

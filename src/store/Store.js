@@ -2,16 +2,18 @@ import { createStore, applyMiddleware, combineReducers, compose } from "redux";
 import thunk from "redux-thunk";
 import { connectRouter, routerMiddleware } from "connected-react-router";
 import { createBrowserHistory } from "history";
-import home from '../modules/home/HomeReducer';
-
-const rootReducer = combineReducers({
-    home,
-});
+import home from "../modules/home/HomeReducer";
 
 export const history = createBrowserHistory();
 
+const rootReducer = combineReducers({
+  home,
+  router: connectRouter(history)
+});
+
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose; // eslint-disable-line
+
 export const store = createStore(
-  connectRouter(history)(rootReducer),
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(), // eslint-disable-line
-  compose(applyMiddleware(routerMiddleware(history), thunk))
+  rootReducer,
+  composeEnhancer(applyMiddleware(routerMiddleware(history), thunk))
 );
