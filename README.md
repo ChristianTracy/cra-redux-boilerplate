@@ -19,7 +19,7 @@ Generate your boilerplate
   npx degit ChristianTracy/cra-redux-boilerplate
 ```
 
-To do this in a SINGLE COMMAND use (just copy and past into your workspace folder):
+To do this in a SINGLE COMMAND use (just copy and paste into your workspace folder):
 
 ```
 mkdir cra-app && cd cra-app && npx degit ChristianTracy/cra-redux-boilerplate
@@ -50,6 +50,12 @@ npm test
 ```
 
 This command will prompt the test results and the coverage percentage.
+
+## ESLint + Prettier
+
+This project contains the basic configuration to use the base airbnb rules. You'll find this inside the `.eslintrc.json` file. Feel free to change to use custom rules.
+
+If you use VSCode, install the `eslint` and `prettier` extensions to format your code on save and get the lint errors inside the editor.
 
 # Project folder structure
 
@@ -103,6 +109,9 @@ This command will prompt the test results and the coverage percentage.
 - [react-i18next](https://github.com/i18next/react-i18next)
 - [recompose](https://github.com/acdlite/recompose)
 - [reselect](https://github.com/reduxjs/reselect)
+- [ESLint](https://eslint.org)
+- [Prettier](https://prettier.io)
+- [Airbnb Rules](https://www.npmjs.com/package/eslint-config-airbnb)
 
 # Redux project conventions
 
