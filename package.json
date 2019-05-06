@@ -2,6 +2,13 @@
   "name": "cra",
   "version": "0.1.0",
   "private": true,
+  "jest": {
+    "collectCoverageFrom": [
+      "!/src/locales/*.{js}",
+      "src/**/*.{js}",
+      "!<rootDir>/node_modules/"
+    ]
+  },
   "dependencies": {
     "connected-react-router": "^6.2.2",
     "history": "^4.7.2",
@@ -21,7 +28,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -35,6 +42,11 @@
   ],
   "devDependencies": {
     "clone": "^2.1.2",
-    "deep-freeze": "0.0.1"
+    "deep-freeze": "0.0.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.16.4"
   }
 }

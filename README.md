@@ -1,31 +1,55 @@
 ![(LITL)](cra-redux-boilerplate-logo.svg)
 
 # Project base
-The project was created using `create-react-app` (https://github.com/facebook/create-react-app).
 
-# Use
+The project was created using [create-react-app](https://github.com/facebook/create-react-app).
+
+# Getting started
+
+Create an empty folder for you project and move to it
+
+```
+  mkdir my-app
+  cd my-app
+```
+
+Generate your boilerplate
+
+```
+  npx degit ChristianTracy/cra-redux-boilerplate
+```
+
+To do this in a SINGLE COMMAND use (just copy and past into your workspace folder):
+
+```
+mkdir cra-app && cd cra-app && npx degit ChristianTracy/cra-redux-boilerplate
+```
 
 ## Start dev server
+
+Don't forget install your dependencies first
+
+```
+  npm install
+```
 
 ```
   npm run start
 ```
 
-if you need change something see `create-react-app` docs.
+if you need change something see [create-react-app](https://github.com/facebook/create-react-app) docs.
 
-## Test
+## Testing
 
 Create your files to test with `[filename].test.js` inside your modules folders.
 
 The base config for test used by `create-react-app` was removed. This project use `jest` to test files.
 
 ```
-npm run test
+npm test
 ```
 
 This command will prompt the test results and the coverage percentage.
-
-
 
 # Project folder structure
 
@@ -94,6 +118,7 @@ The file name should be created with `the name of the module (or not)` + `Reduce
 E.g: `HomeReducer.js` inside `modules/home/HomeReducer.js`
 
 ### - Reducers tip
+
 Always use `combineReducers` to manage little parts of the store (https://redux.js.org/api/combinereducers);
 
 ## Actions
@@ -124,9 +149,9 @@ The file name should be created with `the name of the module (or not)` + `Select
 E.g: `HomeSelectors.js` inside `modules/home/HomeSelectors.js`
 
 ### - Selectors tips
+
 Selector concept : https://redux.js.org/introduction/learningresources#selectors
 If you can, use `reselect` (already installed in this project).
-
 
 # Utils
 
@@ -188,10 +213,10 @@ export const redirectExample = () => dispatch => {
 
 # FAQ's
 
-* Where should I put my bussines logic?
+- Where should I put my bussines logic?
   - The selectors are a good place to do that.
-* Should I make test for every single reducer an action?
+- Should I make test for every single reducer an action?
   - The tests are awesome. It's a good practice to test all your reducers and actions to avoid problems :)
-* I need to add a new view...
+- I need to add a new view...
   - In that case create a component inside a new module like `/modules/about/About.jsx`
   - The next step will be add your new view in the `modules/commons/ViewsContaines.jsx`.

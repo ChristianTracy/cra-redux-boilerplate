@@ -11,14 +11,18 @@ const Home = ({ t, exampleAction, values, today, redirectExample }) => (
   <div>
     <h1>{t("home.title")}</h1>
     <div>
-        <button onClick={redirectExample}>{t('home.redirect')}</button>
+      <button onClick={redirectExample}>{t("home.redirect")}</button>
     </div>
     <div>
-        <span>{t('home.today')}:{today}</span>
+      <span>
+        {t("home.today")}:{today}
+      </span>
     </div>
     <div>
-      <button onClick={() => exampleAction("--example value--")}>{t('home.button')}</button>
-      <h2>{t('home.values')}</h2>
+      <button onClick={() => exampleAction("--example value--")}>
+        {t("home.button")}
+      </button>
+      <h2>{t("home.values")}</h2>
       {values.map((value, index) => (
         <div key={index}>{value}</div>
       ))}
@@ -31,7 +35,7 @@ Home.propTypes = {
   today: PropTypes.number.isRequired,
   values: PropTypes.arrayOf(PropTypes.string).isRequired,
   redirectExample: PropTypes.func.isRequired,
-  exampleAction: PropTypes.func.isRequired,
+  exampleAction: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => ({

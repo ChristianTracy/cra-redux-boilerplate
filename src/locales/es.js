@@ -6,7 +6,7 @@ export default {
     button: "Acción de ejemplo",
     values: "Resultados"
   },
-  another:{
-    title: 'OTRA VISTA',
-  }  
+  another: {
+    title: "OTRA VISTA"
+  }
 };

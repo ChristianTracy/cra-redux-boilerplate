@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router";
-import Home from '../home/Home';
-import Another from '../another/Another';
+import Home from "../home/Home";
+import Another from "../another/Another";
 
 const ViewsContainer = () => (
   <Switch>

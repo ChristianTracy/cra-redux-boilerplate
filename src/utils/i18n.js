@@ -4,9 +4,9 @@ import { en, es } from '../locales';
 
 const options = {
   interpolation: {
-    escapeValue: false,
+    escapeValue: false
   },
-  resources: { en, es },
+  resources: { en, es }
 };
 
 i18next.use(LanguageDetector).init(options);

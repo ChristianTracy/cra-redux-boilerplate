@@ -1,9 +1,9 @@
-import React from "react";
-import { Provider } from "react-redux";
-import { ConnectedRouter } from "connected-react-router";
-import { store, history } from "./store/Store";
-import { I18nextProvider } from "react-i18next";
-import i18n from "./utils/i18n";
+import React from 'react';
+import { Provider } from 'react-redux';
+import { ConnectedRouter } from 'connected-react-router';
+import { store, history } from './store/Store';
+import { I18nextProvider } from 'react-i18next';
+import i18n from './utils/i18n';
 import ViewsContainer from './modules/commons/ViewsContainer';
 
 const App = () => (
