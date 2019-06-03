@@ -1,10 +1,10 @@
 export default {
   home: {
     title: "HOME",
-    redirect: "REDIRECT",
-    today: "Day number",
-    button: "Example action",
-    values: "Example values"
+    redirect: "Redirect",
+    today: "Today is the day",
+    button: "Dispatch an example action",
+    values: "Values from the store (dispatch an action to load more)"
   },
   another: {
     title: "ANOTHER VIEW"

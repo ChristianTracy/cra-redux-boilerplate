@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "connected-react-router": "^6.2.2",
-    "history": "^4.7.2",
+    "history": "^4.9.0",
     "i18next": "^13.1.4",
     "i18next-browser-languagedetector": "^2.2.4",
     "react": "^16.8.6",
@@ -19,7 +19,7 @@
     "react-i18next": "^9.0.4",
     "react-redux": "^6.0.0",
     "react-router": "^4.3.1",
-    "react-scripts": "^2.1.8",
+    "react-scripts": "3.0.0",
     "recompose": "^0.30.0",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",

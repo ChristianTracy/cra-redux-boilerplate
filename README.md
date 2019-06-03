@@ -1,4 +1,4 @@
-![(LITL)](cra-redux-boilerplate-logo.svg)
+![(LITL)](./src/assets/cra-redux-boilerplate-logo.svg)
 
 # Project base
 
