@@ -1,9 +1,8 @@
 import React from "react";
 import { translate } from "react-i18next";
 import PropTypes from "prop-types";
-import { compose } from "recompose";
 import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
+import { bindActionCreators, compose } from "redux";
 import logo from "../../assets/cra-redux-boilerplate-logo.svg";
 import { todaySelector, valuesSelector } from "./HomeSelectors";
 import * as homeActions from "./HomeActions";

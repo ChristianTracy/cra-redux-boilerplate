@@ -4,7 +4,7 @@
 
 The project was created using [create-react-app](https://github.com/facebook/create-react-app).
 
-# Getting started
+# 👋 Getting started
 
 Create an empty folder for you project and move to it
 
@@ -19,13 +19,13 @@ Generate your boilerplate
   npx degit ChristianTracy/cra-redux-boilerplate
 ```
 
-To do this in a SINGLE COMMAND use (just copy and paste into your workspace folder):
+🤖 To do this in a SINGLE COMMAND use (just copy and paste into your workspace folder):
 
 ```
-mkdir cra-app && cd cra-app && npx degit ChristianTracy/cra-redux-boilerplate
+mkdir my-app && cd my-app && npx degit ChristianTracy/cra-redux-boilerplate
 ```
 
-## Start dev server
+## 💻 Start dev server
 
 Don't forget install your dependencies first
 
@@ -39,7 +39,7 @@ Don't forget install your dependencies first
 
 if you need change something see [create-react-app](https://github.com/facebook/create-react-app) docs.
 
-## Testing
+## 🏥 Testing
 
 Create your files to test with `[filename].test.js` inside your modules folders.
 
@@ -51,13 +51,13 @@ npm test
 
 This command will prompt the test results and the coverage percentage.
 
-## ESLint + Prettier
+## 🌈 ESLint + Prettier
 
 This project contains the basic configuration to use the base airbnb rules. You'll find this inside the `.eslintrc.json` file. Feel free to change to use custom rules.
 
 If you use VSCode, install the `eslint` and `prettier` extensions to format your code on save and get the lint errors inside the editor.
 
-# Project folder structure
+# 🚧 Project folder structure
 
 ```
 ├── README.md
@@ -91,7 +91,7 @@ If you use VSCode, install the `eslint` and `prettier` extensions to format your
     └── registerServiceWorker.js
 ```
 
-# Libraries included
+# 📚 Libraries included
 
 ## REDUX:
 
@@ -107,13 +107,12 @@ If you use VSCode, install the `eslint` and `prettier` extensions to format your
 ## UTILS
 
 - [react-i18next](https://github.com/i18next/react-i18next)
-- [recompose](https://github.com/acdlite/recompose)
 - [reselect](https://github.com/reduxjs/reselect)
 - [ESLint](https://eslint.org)
 - [Prettier](https://prettier.io)
 - [Airbnb Rules](https://www.npmjs.com/package/eslint-config-airbnb)
 
-# Redux project conventions
+# 👉 Redux project conventions
 
 ## Reducers
 
@@ -162,9 +161,9 @@ E.g: `HomeSelectors.js` inside `modules/home/HomeSelectors.js`
 Selector concept : https://redux.js.org/introduction/learningresources#selectors
 If you can, use `reselect` (already installed in this project).
 
-# Utils
+# 🔨 Utils
 
-# i18n
+# 🌎 i18n
 
 Define your texts inside the `locales/[language].js` files.
 The library used to manage this is `react-i18next`.
@@ -185,20 +184,7 @@ The library used to manage this is `react-i18next`.
 
 You can check the complete implementation in `modules/home/Home.jsx`
 
-# Recompose
-
-`recompose` it's already installed in this project. This library has a lot of utils methods to use in your react components. You can see the full documentation in https://github.com/acdlite/recompose.
-
-In `modules/home/Home.jsx` you can see an example of `compose` method to combine two differents high order components
-
-```
-export default compose(
-  translate(),
-  connect(...)
-)(MyComponent);
-```
-
-# Router
+# 🛣️ Router
 
 See the full documentation of used router in [react-router](https://www.npmjs.com/package/react-router) and [connected-react-router](https://github.com/supasate/connected-react-router).
 
@@ -220,7 +206,7 @@ export const redirectExample = () => dispatch => {
   </Switch>
 ```
 
-# FAQ's
+# ❓ FAQ's
 
 - Where should I put my bussines logic?
   - The selectors are a good place to do that.
