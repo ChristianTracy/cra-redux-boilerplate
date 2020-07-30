@@ -171,15 +171,17 @@ The library used to manage this is `react-i18next`.
 ## Use
 
 ```
-  import { translate } from 'react-i18next';
+  import { useTranslation } from 'react-i18next';
 
   ...
 
-  const MyComponent = ({ t }) => <span>{t('home.text')}</span>
+  const MyComponent = () => {
+    const { t, i18n } = useTranslation();
+    <span>{t('home.text')}</span>
+  }
 
   ...
 
-  export default translate()(MyComponent)
 ```
 
 You can check the complete implementation in `modules/home/Home.jsx`

@@ -1,5 +1,5 @@
 import React from "react";
-import { translate } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { bindActionCreators, compose } from "redux";
@@ -50,45 +50,47 @@ const styles = {
   }
 };
 
-const Home = ({ t, exampleAction, values, today, redirectExample }) => (
-  <div>
-    <div style={styles.header}>
-      <img src={logo} alt="logo" />
-      <div style={styles.titleContainer}>
-        <h2 style={styles.title}>{t("home.title")}</h2>
+const Home = ({ exampleAction, values, today, redirectExample }) => {
+  const { t } = useTranslation();
+  return (
+    <div>
+      <div style={styles.header}>
+        <img src={logo} alt="logo" />
+        <div style={styles.titleContainer}>
+          <h2 style={styles.title}>{t("home.title")}</h2>
+        </div>
+      </div>
+      <div style={styles.content}>
+        <div style={styles.container}>
+          <button onClick={redirectExample} style={styles.button}>
+            {t("home.redirect")}
+          </button>
+        </div>
+        <div style={styles.container}>
+          <span style={styles.dateText}>
+            {t("home.today")} => {today}
+          </span>
+        </div>
+        <div style={styles.container}>
+          <button
+            onClick={() => exampleAction("--example value--")}
+            style={styles.button}
+          >
+            {t("home.button")}
+          </button>
+          <h2>{t("home.values")}</h2>
+          <ul>
+            {values.map((value, index) => (
+              <li key={index}>{value}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
-    <div style={styles.content}>
-      <div style={styles.container}>
-        <button onClick={redirectExample} style={styles.button}>
-          {t("home.redirect")}
-        </button>
-      </div>
-      <div style={styles.container}>
-        <span style={styles.dateText}>
-          {t("home.today")} => {today}
-        </span>
-      </div>
-      <div style={styles.container}>
-        <button
-          onClick={() => exampleAction("--example value--")}
-          style={styles.button}
-        >
-          {t("home.button")}
-        </button>
-        <h2>{t("home.values")}</h2>
-        <ul>
-          {values.map((value, index) => (
-            <li key={index}>{value}</li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  </div>
-);
+  )
+};
 
 Home.propTypes = {
-  t: PropTypes.func.isRequired,
   today: PropTypes.number.isRequired,
   values: PropTypes.arrayOf(PropTypes.string).isRequired,
   redirectExample: PropTypes.func.isRequired,
@@ -104,7 +106,6 @@ const mapDispatchToProps = dispatch =>
   bindActionCreators({ ...homeActions }, dispatch);
 
 export default compose(
-  translate(),
   connect(
     mapStateToProps,
     mapDispatchToProps

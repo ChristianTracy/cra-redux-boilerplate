@@ -10,16 +10,15 @@
     ]
   },
   "dependencies": {
-    "connected-react-router": "^6.7.0",
-    "history": "^4.10.1",
-    "i18next": "^13.1.4",
-    "i18next-browser-languagedetector": "^2.2.4",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-i18next": "^9.0.4",
-    "react-redux": "^6.0.0",
-    "react-router": "^5.1.2",
-    "react-scripts": "^3.4.0",
+    "connected-react-router": "^6.8.0",
+    "i18next": "^19.6.3",
+    "i18next-browser-languagedetector": "^5.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-i18next": "^11.7.0",
+    "react-redux": "^7.2.1",
+    "react-router": "^5.2.0",
+    "react-scripts": "^3.4.1",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0"
@@ -48,10 +47,10 @@
   "devDependencies": {
     "clone": "^2.1.2",
     "deep-freeze": "0.0.1",
-    "eslint-config-airbnb": "^17.1.1",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.18.3",
-    "prettier": "^1.19.1"
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.5",
+    "prettier": "^2.0.5"
   }
 }
