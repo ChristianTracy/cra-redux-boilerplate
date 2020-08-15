@@ -4,9 +4,13 @@ export default {
     redirect: "REDIRIGIR",
     today: "Hoy es el día",
     button: "Disparar acción de ejemplo",
-    values: "Resultado del store (disparar una acción para cargar más)"
+    values: "Resultado del store (disparar una acción para cargar más)",
+    private: "Ir a vista protegida/privada",
   },
   another: {
     title: "OTRA VISTA"
+  },
+  login: {
+    title: "Vista privada. Login requerido."
   }
 };

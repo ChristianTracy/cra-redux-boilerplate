@@ -13,6 +13,6 @@ export const exampleAction = param => dispatch => {
   dispatch(exampleActionCreator(param));
 };
 
-export const redirectExample = () => dispatch => {
-  dispatch(push("/another"));
+export const redirectExample = path => dispatch => {
+  dispatch(push(path));
 };
