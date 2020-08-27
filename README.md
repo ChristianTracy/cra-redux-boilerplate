@@ -27,7 +27,7 @@ mkdir my-app && cd my-app && npx degit ChristianTracy/cra-redux-boilerplate
 
 ## 💻 Start dev server
 
-Don't forget install your dependencies first
+Don't forget to install your dependencies first
 
 ```
   npm install
