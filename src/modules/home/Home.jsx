@@ -62,7 +62,7 @@ const Home = ({ exampleAction, values, today, redirectExample }) => {
       </div>
       <div style={styles.content}>
         <div style={styles.container}>
-          <button onClick={redirectExample} style={styles.button}>
+          <button onClick={() => redirectExample("/another")} style={styles.button}>
             {t("home.redirect")}
           </button>
         </div>
@@ -70,6 +70,14 @@ const Home = ({ exampleAction, values, today, redirectExample }) => {
           <span style={styles.dateText}>
             {t("home.today")} => {today}
           </span>
+        </div>
+        <div style={styles.container}>
+          <button
+            onClick={() => redirectExample("/private")}
+            style={styles.button}
+          >
+            {t("home.private")}
+          </button>
         </div>
         <div style={styles.container}>
           <button
@@ -85,6 +93,7 @@ const Home = ({ exampleAction, values, today, redirectExample }) => {
             ))}
           </ul>
         </div>
+
       </div>
     </div>
   )
